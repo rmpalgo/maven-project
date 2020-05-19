@@ -17,5 +17,11 @@ public class Main {
            System.out.println(input + " " + "is not a number");
        }
 
+        System.out.println("Flipped Case: " + StringUtils.swapCase(input));
+        System.out.println("Reverse: " + StringUtils.reverse(input));
+
+
+
+
     }
 }
