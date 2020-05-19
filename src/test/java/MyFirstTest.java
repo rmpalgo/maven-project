@@ -1,4 +1,8 @@
 import org.junit.Test;
+
+import java.util.ArrayList;
+import java.util.List;
+
 import static org.junit.Assert.*;
 
 public class MyFirstTest {
@@ -23,7 +27,12 @@ public class MyFirstTest {
         assertNotEquals(4.9, price - discount, 0.5);
     }
 
-
+    @Test
+    public void assertNotSameMethod() {
+        List<String> languages = new ArrayList<>();
+        List<String> moreLanguages = new ArrayList<>();
+        assertNotSame(languages, moreLanguages);
+    }
 
 
 
