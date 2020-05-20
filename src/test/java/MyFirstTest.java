@@ -1,3 +1,4 @@
+import org.junit.Before;
 import org.junit.Test;
 
 import java.util.ArrayList;
@@ -7,10 +8,19 @@ import static org.junit.Assert.*;
 
 public class MyFirstTest {
 
+    List<String> names;
+
+    //
+    @Before
+    public void setUp() {
+        this.names = new ArrayList<>();
+        names.add("Fer");
+
+    }
+
     @Test
     public void testIfStringMathces() {
         String actual = "Codeup";
-
         assertEquals("Codeup", actual);
         assertNotEquals("codeup", actual);
     }
@@ -39,6 +49,13 @@ public class MyFirstTest {
         assertTrue(language.contains("H"));
         assertFalse(language.contains("J"));
     }
+
+    @Test
+    public void testIfFerItInTheList() {
+        assertEquals("Fer", names.get(0));
+    }
+
+
 
 
 
