@@ -53,6 +53,7 @@ public class MyFirstTest {
     @Test
     public void testIfFerItInTheList() {
         assertEquals("Fer", names.get(0));
+        assertNotEquals("Duglas", names.get(0));
     }
 
 
